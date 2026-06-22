@@ -8,7 +8,9 @@ app_email = "info@tridz.com"
 app_license = "MIT"
 app_logo_url = "/assets/ury/Images/ury-logo.jpg"
 app_icon_title = "URY"
-required_apps = ["erpnext"]
+# GARP platform: ERPNext is installed as the `garperp` fork, not upstream `erpnext`.
+# Point bench's dependency check at garperp so `bench install-app ury` resolves.
+required_apps = ["garperp"]
 # Includes in <head>
 # ------------------
 add_to_apps_screen = [
